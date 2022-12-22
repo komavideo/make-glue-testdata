@@ -22,6 +22,7 @@ gamelist = [
     ["文明6", "策略", "4", "汉语", "Steam"],
     ["精灵宝可梦", "对战", "4", "日语", "Switch"],
 ]
+# 卖家
 sellers = ["亚马逊", "雅虎", "乐天"]
 
 
@@ -38,15 +39,15 @@ def makecsv():
         writer = csv.DictWriter(
             file,
             [
-                "row_num",
-                "seller",
-                "title",
-                "category",
-                "age",
-                "lang",
-                "platform",
-                "quantity",
-                "pwd",
+                "row_num",  # 行号
+                "seller",   # 卖家
+                "title",    # 作品名
+                "category", # 分类
+                "age",      # 年龄
+                "lang",     # 语言
+                "platform", # 平台
+                "quantity", # 销量
+                "pwd",      # 密码等须保密数据
             ],
         )
         writer.writeheader()
