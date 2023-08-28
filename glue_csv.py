@@ -5,25 +5,25 @@ from uuid import uuid4
 
 #######################################
 # 生成数据条数
-DATA_COUNT = 10
+DATA_COUNT = 20
 # 生成文件名
 CSV_FILENAME = "data_0001.csv"
 #######################################
 
 # 名称,分类，年龄,语言,平台
 gamelist = [
-    ["王者荣耀", "MOBA", "9", "汉语", "iOS"],
-    ["实况足球22", "体育", "9", "日语", "Steam"],
-    ["塞尔达传说", "动作", "全年龄", "日语", "Switch"],
-    ["超级马里奥", "动作", "全年龄", "日语", "Switch"],
-    ["街头霸王V", "对战", "17", "英语", "PS5"],
-    ["三国志14", "策略", "9", "日语", "Steam"],
-    ["GTA5", "暴力", "18", "英语", "Steam"],
-    ["文明6", "策略", "4", "汉语", "Steam"],
-    ["精灵宝可梦", "对战", "4", "日语", "Switch"],
+    ["WangZhe", "MOBA", "9", "CN", "iOS"],
+    ["WE22", "Sports", "9", "JP", "Steam"],
+    ["Zelda", "Action", "All", "JP", "Switch"],
+    ["SuperMario", "Action", "All", "JP", "Switch"],
+    ["SF6", "VS", "17", "EN", "PS5"],
+    ["Sangokushi14", "SIM", "9", "JP", "Steam"],
+    ["GTA5", "Violence", "18", "EN", "Steam"],
+    ["CIV6", "SIM", "4", "CN", "Steam"],
+    ["Pokemon", "VS", "4", "JP", "Switch"],
 ]
 # 卖家
-sellers = ["亚马逊", "雅虎", "乐天"]
+sellers = ["Amazon", "Yahoo", "Rakuten"]
 
 
 def mkpasswd(length):
