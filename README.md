@@ -18,3 +18,9 @@ DATA_COUNT=10
 ```bash
 python glue_csv.py
 ```
+
+### 上传S3
+
+```bash
+aws s3 cp  ./data_0001.csv s3://${BUCKET_NAME}/input/data/sales_database/sails_csv/data_0001.csv  
+```
