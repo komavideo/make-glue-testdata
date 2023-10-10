@@ -47,6 +47,8 @@ def makecsv():
                 "lang",     # 语言
                 "platform", # 平台
                 "quantity", # 销量
+                "stars",    # 评价
+                "ymd",      # 年月日
                 "pwd",      # 密码等须保密数据
             ],
         )
@@ -64,6 +66,8 @@ def makecsv():
                 "lang": transaction[3],
                 "platform": transaction[4],
                 "quantity": str(random.randint(1, 100)),
+                "stars": str(random.randint(1, 5)),
+                "ymd": "2022-" + "{:0=2}".format(random.randint(1, 12)) + "-" + "{:0=2}".format(random.randint(1, 28)),
                 "pwd": mkpasswd(16),
             }
             print(record)
